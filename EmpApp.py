@@ -30,7 +30,7 @@ def home():
 
 @app.route("/about", methods=['POST'])
 def about():
-    return "This a Covid Database"
+    return render_template('AddEmp.html')
 
 
 @app.route("/addemp", methods=['POST'])
