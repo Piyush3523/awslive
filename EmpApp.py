@@ -9,7 +9,7 @@ app = Flask(__name__)
 bucket = custombucket
 region = customregion
 
-db_conn: Connection = connections.Connection(
+db_conn = connections.Connection(
     host=customhost,
     port=3306,
     user=customuser,
