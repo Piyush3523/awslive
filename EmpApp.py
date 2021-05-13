@@ -35,12 +35,12 @@ def about():
 
 @app.route("/addemp", methods=['POST'])
 def AddEmp():
-    emp_id = request.form['mobile']
+    emp_id = request.form['emp_id']
     first_name = request.form['first_name']
     last_name = request.form['last_name']
-    pri_skill = request.form['covid_report']
+    pri_skill = request.form['pri_skill']
     location = request.form['location']
-    emp_image_file = request.files['vaccination_image_file']
+    emp_image_file = request.files['emp_image_file']
 
     insert_sql = "INSERT INTO employee VALUES (%s, %s, %s, %s, %s)"
     cursor = db_conn.cursor()
